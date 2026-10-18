@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Calendar year="2026" title="国务院办公厅关于2026年部分节假日安排的通知" source="https://www.gov.cn/zhengce/content/202511/content_7047090.htm" issued="2025-11-04">
+  <Holidays>
+    <Range start="2026-01-01" end="2026-01-03" />
+    <Range start="2026-02-15" end="2026-02-23" />
+    <Range start="2026-04-04" end="2026-04-06" />
+    <Range start="2026-05-01" end="2026-05-05" />
+    <Range start="2026-06-19" end="2026-06-21" />
+    <Range start="2026-09-25" end="2026-09-27" />
+    <Range start="2026-10-01" end="2026-10-07" />
+  </Holidays>
+  <Workdays>
+    <Day date="2026-01-04" /><Day date="2026-02-14" /><Day date="2026-02-28" />
+    <Day date="2026-05-09" /><Day date="2026-09-20" /><Day date="2026-10-10" />
+  </Workdays>
+</Calendar>
