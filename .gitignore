@@ -1,0 +1,27 @@
+# Build outputs
+**/.build/
+**/bin/
+**/obj/
+.vs/
+dist/
+*.exe
+*.pdb
+*.user
+*.suo
+
+# Generated icon formats; editable SVG and generator are retained
+src/assets/*.ico
+src/assets/软件图标.png
+
+# Test captures and fixtures
+src/*.png
+src/probe-*.txt
+src/calendar-fixture-*.xml
+src/calendar-tests-*/
+docs/界面检查-*.png
+
+# Local configuration and editor files
+before-update.json
+.DS_Store
+Thumbs.db
+desktop.ini
