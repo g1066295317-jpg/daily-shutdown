@@ -4,7 +4,7 @@
 
 一个清新简约的 Windows 定时关机工具，支持系统托盘、登录自动启动和六种重复规划。免安装，不需要 Python。
 
-**源码已公开；Windows 便携包尚待上传。** · [详细使用说明](docs/usage.md)
+**[下载 Windows 便携包](https://github.com/g1066295317-jpg/daily-shutdown/actions/runs/39128489581/artifacts/12136559502)**（需登录 GitHub，保留 90 天） · [详细使用说明](docs/usage.md)
 
 
 
@@ -18,7 +18,7 @@
 
 ## 使用
 
-1. 先按下方“构建与验证”生成 EXE；Windows 便携版下载包发布后会在本页补充入口。
+1. 点击上方下载链接并解压；也可按下方“构建与验证”生成 EXE。
 2. 双击“每天定时关机.exe”，设置时间，并点击“重复”选择规划。
 3. 点击“保存并启用”。需要登录自动启动时，打开对应开关。
 
@@ -66,4 +66,4 @@ src/       C# 源码、测试、构建脚本
 docs/      使用与验证说明
 ```
 
-生成的 EXE、ICO、编译缓存、测试截图与本机配置不提交到源码仓库。Windows 便携包计划通过 Releases 分发，当前尚未上传。
+生成的 EXE、ICO、编译缓存、测试截图与本机配置不提交到源码仓库。[v1.0.0 版本说明](https://github.com/g1066295317-jpg/daily-shutdown/releases/tag/v1.0.0)中提供 Actions 构建产物下载入口，尚无独立的 Release 二进制附件。Actions 包到期后，仓库所有者可在 Windows portable build 工作流中点击 Run workflow 重新构建。
