@@ -1,0 +1,37 @@
+name: Windows portable build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '.github/workflows/build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build and test rules
+        shell: powershell
+        run: .\src\verify.ps1 -UnitOnly
+      - name: Prepare portable files
+        shell: powershell
+        run: |
+          New-Item -ItemType Directory -Path dist -Force | Out-Null
+          Copy-Item -LiteralPath '.\src\每天定时关机.exe' -Destination dist
+          Copy-Item -LiteralPath '.\docs\usage.md' -Destination '.\dist\使用说明.md'
+          Get-FileHash -LiteralPath '.\dist\每天定时关机.exe' -Algorithm SHA256 | Format-List
+      - uses: actions/upload-artifact@v7
+        with:
+          name: daily-shutdown-windows
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 90
