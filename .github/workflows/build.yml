@@ -23,7 +23,7 @@ jobs:
         shell: powershell
         run: .\src\verify.ps1 -UnitOnly
       - name: Prepare portable files
-        shell: powershell
+        shell: pwsh
         run: |
           New-Item -ItemType Directory -Path dist -Force | Out-Null
           Copy-Item -LiteralPath '.\src\每天定时关机.exe' -Destination dist
