@@ -4,9 +4,9 @@
 
 一个清新简约的 Windows 定时关机工具，支持系统托盘、登录自动启动和六种重复规划。免安装，不需要 Python。
 
-**[下载 Windows 便携包](https://github.com/g1066295317-jpg/daily-shutdown/actions/runs/39128489581/artifacts/12136559502)**（需登录 GitHub，保留 90 天） · [详细使用说明](docs/usage.md)
+**[下载 Windows 便携包（推荐）](https://github.com/g1066295317-jpg/daily-shutdown/releases/download/v1.0.0/daily-shutdown-v1.0.0-windows.zip)** · [直接下载 EXE](https://github.com/g1066295317-jpg/daily-shutdown/releases/download/v1.0.0/daily-shutdown.exe) · [详细使用说明](docs/usage.md)
 
-
+下载无需登录 GitHub，不受 Actions 产物 90 天保留期限制。ZIP 解压后运行“每天定时关机.exe”；EXE 下载后可直接运行。
 
 ## 功能
 
@@ -66,4 +66,4 @@ src/       C# 源码、测试、构建脚本
 docs/      使用与验证说明
 ```
 
-生成的 EXE、ICO、编译缓存、测试截图与本机配置不提交到源码仓库。[v1.0.0 版本说明](https://github.com/g1066295317-jpg/daily-shutdown/releases/tag/v1.0.0)中提供 Actions 构建产物下载入口，尚无独立的 Release 二进制附件。Actions 包到期后，仓库所有者可在 Windows portable build 工作流中点击 Run workflow 重新构建。
+生成的 EXE、ICO、编译缓存、测试截图与本机配置不提交到源码仓库。可运行程序通过 [Releases](https://github.com/g1066295317-jpg/daily-shutdown/releases/latest) 的 ZIP、EXE 附件分发；Source code 是源码，普通使用请选择 ZIP 或 EXE。GitHub Actions 用于构建与规则测试。
